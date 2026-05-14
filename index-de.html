@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- English version | Deutsche Version: /index-de.html -->
+<!-- Deutsche Version | English version: /index.html -->
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mason Ventures GmbH i.G.</title>
   <link rel="icon" type="image/png" href="favicon.png" />
-  <meta name="description" content="Mason Ventures GmbH is a portfolio of independent ventures spanning strategy consulting, artificial intelligence, and global exploration." />
+  <meta name="description" content="Mason Ventures GmbH ist ein Portfolio unabhängiger Ventures in den Bereichen Strategieberatung, Künstliche Intelligenz und globale Erkundung." />
   <meta property="og:title" content="Mason Ventures GmbH" />
-  <meta property="og:description" content="Mason Ventures GmbH is a portfolio of independent ventures spanning strategy consulting, artificial intelligence, and global exploration." />
-  <meta property="og:url" content="https://www.masonventures.de" />
+  <meta property="og:description" content="Mason Ventures GmbH ist ein Portfolio unabhängiger Ventures in den Bereichen Strategieberatung, Künstliche Intelligenz und globale Erkundung." />
+  <meta property="og:url" content="https://www.masonventures.de/index-de.html" />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +27,14 @@
     .glow { position: fixed; border-radius: 50%; filter: blur(120px); pointer-events: none; z-index: 0; }
     .glow-1 { width: 600px; height: 600px; top: -200px; left: -150px; background: radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 70%); }
     .glow-2 { width: 500px; height: 500px; bottom: 10%; right: -100px; background: radial-gradient(circle, rgba(201,168,76,0.05) 0%, transparent 70%); }
+    /* ── Language switcher ── */
+    .lang-bar { position: relative; z-index: 10; display: flex; justify-content: flex-end; padding: 14px 32px 0; max-width: 960px; margin: 0 auto; }
+    .lang-switch { display: flex; gap: 4px; align-items: center; }
+    .lang-switch a { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid var(--border); border-radius: 2px; text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+    .lang-switch a.active { color: var(--gold); border-color: var(--gold-dim); }
+    .lang-switch a:not(.active) { color: var(--text-muted); }
+    .lang-switch a:not(.active):hover { color: var(--text); border-color: var(--text-muted); }
+    .lang-switch span { color: var(--border); font-size: 0.7rem; }
     .wrap { position: relative; z-index: 1; max-width: 960px; margin: 0 auto; padding: 0 32px; }
     header { padding: 32px 0 0; animation: fadeUp 0.9s ease both; }
     .header-inner { display: flex; align-items: center; gap: 24px; margin-bottom: 8px; }
@@ -84,14 +92,6 @@
     .footer-imp:hover { color: var(--gold); }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes pulse { 0%, 100% { opacity: 0.3; transform: scale(1); } 50% { opacity: 1; transform: scale(1.35); } }
-    /* ── Language switcher ── */
-    .lang-bar { position: relative; z-index: 10; display: flex; justify-content: flex-end; padding: 14px 32px 0; max-width: 960px; margin: 0 auto; }
-    .lang-switch { display: flex; gap: 4px; align-items: center; }
-    .lang-switch a { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid var(--border); border-radius: 2px; text-decoration: none; transition: border-color 0.2s, color 0.2s; }
-    .lang-switch a.active { color: var(--gold); border-color: var(--gold-dim); }
-    .lang-switch a:not(.active) { color: var(--text-muted); }
-    .lang-switch a:not(.active):hover { color: var(--text); border-color: var(--text-muted); }
-    .lang-switch span { color: var(--border); font-size: 0.7rem; }
     @media (max-width: 600px) {
       .wrap { padding: 0 20px; }
       .lang-bar { padding: 12px 20px 0; }
@@ -111,9 +111,9 @@
 
   <div class="lang-bar">
     <nav class="lang-switch">
-      <a href="index.html" class="active">EN</a>
+      <a href="index.html">EN</a>
       <span>|</span>
-      <a href="index-de.html">DE</a>
+      <a href="index-de.html" class="active">DE</a>
     </nav>
   </div>
 
@@ -135,61 +135,61 @@
           </div>
         </div>
       </div>
-      <p class="tagline">A portfolio of independent ventures — spanning strategy, artificial intelligence, and global exploration.</p>
+      <p class="tagline">Ein Portfolio unabhängiger Ventures — in den Bereichen Strategieberatung, Künstliche Intelligenz und globale Erkundung.</p>
     </header>
 
     <div class="divider"></div>
 
     <section class="about">
-      <p class="section-label">About</p>
+      <p class="section-label">Über uns</p>
       <p class="about-text">
-        Mason Ventures GmbH is the <strong>holding company</strong> behind a collection of focused projects. Each venture operates independently, united by a commitment to <strong>quality, expertise, and curiosity</strong> — from strategy consulting and AI innovation to knowledge sharing and world travel.
+        Mason Ventures GmbH ist die <strong>Holdinggesellschaft</strong> hinter einer Reihe fokussierter Projekte. Jedes Venture agiert eigenständig, vereint durch das Bestreben nach <strong>Qualität, Expertise und Neugier</strong> — von Strategieberatung und KI-Innovation bis hin zu Wissenstransfer und Weltreisen.
       </p>
     </section>
 
     <section class="projects-section">
       <div class="projects-header">
-        <p class="section-label">Our Projects</p>
+        <p class="section-label">Unsere Projekte</p>
       </div>
       <div class="projects-grid">
 
         <div class="card">
           <span class="card-num">01</span>
           <h2 class="card-title">ConsultMason</h2>
-          <p class="card-subtitle">Strategy &amp; Consulting</p>
-          <p class="card-desc">A dual-mandate consultancy: <strong>hands-on strategy consulting</strong> delivered personally, drawing on deep roots in the industry — and a <strong>placement agency</strong> that connects high-calibre freelance consultants with companies seeking specialist expertise.</p>
-          <a href="https://www.consultmason.com" target="_blank" rel="noopener" class="card-link">Visit <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <p class="card-subtitle">Strategie &amp; Beratung</p>
+          <p class="card-desc">Eine Beratung mit doppeltem Mandat: <strong>persönliche Strategieberatung</strong> auf Basis langjähriger Branchenerfahrung — sowie eine <strong>Vermittlungsagentur</strong>, die hochkarätige Freiberufler mit Unternehmen verbindet, die spezialisierte Expertise suchen.</p>
+          <a href="https://www.consultmason.com" target="_blank" rel="noopener" class="card-link">Besuchen <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
 
         <div class="card">
           <span class="card-num">02</span>
           <h2 class="card-title">Maason AI</h2>
-          <p class="card-subtitle">Artificial Intelligence</p>
-          <p class="card-desc">An AI-first studio helping modern companies harness the power of intelligent agents. Services span <strong>custom AI agent development</strong>, strategic AI consulting, and hands-on <strong>training programs</strong> — empowering organizations to move from curiosity to capability.</p>
-          <a href="https://www.maason.ai" target="_blank" rel="noopener" class="card-link">Visit <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <p class="card-subtitle">Künstliche Intelligenz</p>
+          <p class="card-desc">Ein KI-fokussiertes Studio, das modernen Unternehmen hilft, das Potenzial intelligenter Agenten zu nutzen. Das Angebot umfasst <strong>individuelle KI-Agenten-Entwicklung</strong>, strategische KI-Beratung und praxisnahe <strong>Schulungsprogramme</strong> — von der Idee zur Umsetzung.</p>
+          <a href="https://www.maason.ai" target="_blank" rel="noopener" class="card-link">Besuchen <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
 
         <div class="card">
           <span class="card-num">03</span>
           <h2 class="card-title">TimMaurer.ai</h2>
-          <p class="card-subtitle">Knowledge &amp; AI Tools</p>
-          <p class="card-desc">A personal knowledge platform showcasing <strong>deep expertise in artificial intelligence</strong>. Offers practical resources including in-depth <strong>eBooks</strong> and a growing suite of <strong>mini AI agents</strong> — from workout plan creators to travel assistants — making AI tangible and useful.</p>
-          <a href="https://www.timmaurer.ai" target="_blank" rel="noopener" class="card-link">Visit <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <p class="card-subtitle">Wissen &amp; KI-Tools</p>
+          <p class="card-desc">Eine persönliche Wissensplattform mit <strong>fundierter Expertise im Bereich Künstliche Intelligenz</strong>. Das Angebot umfasst praxisnahe <strong>eBooks</strong> und eine wachsende Suite von <strong>KI-Mini-Agenten</strong> — vom Trainingsplan-Generator bis zum Reiseassistenten.</p>
+          <a href="https://www.timmaurer.ai" target="_blank" rel="noopener" class="card-link">Besuchen <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
 
         <div class="card">
           <span class="card-num">04</span>
           <h2 class="card-title">TimsTravelStories</h2>
-          <p class="card-subtitle">Travel &amp; Exploration</p>
-          <p class="card-desc">A travel chronicle following one mission: <strong>visit every country in the world</strong>. With more than 100 countries and counting, the blog captures authentic stories, insights, and discoveries from the road — a living journal of the planet in all its diversity.</p>
-          <a href="https://www.timstravelstories.com" target="_blank" rel="noopener" class="card-link">Visit <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <p class="card-subtitle">Reisen &amp; Entdeckungen</p>
+          <p class="card-desc">Ein Reisetagebuch mit einer Mission: <strong>jedes Land der Welt besuchen</strong>. Mit mehr als 100 Ländern und noch lange nicht fertig — authentische Geschichten, Eindrücke und Entdeckungen von unterwegs.</p>
+          <a href="https://www.timstravelstories.com" target="_blank" rel="noopener" class="card-link">Besuchen <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
 
         <div class="card card-soon">
           <span class="card-num">—</span>
-          <h2 class="card-title">More to Come</h2>
-          <p class="card-subtitle">In the making</p>
-          <p class="card-desc">New ventures are taking shape. Watch this space.</p>
+          <h2 class="card-title">Weitere folgen</h2>
+          <p class="card-subtitle">In Vorbereitung</p>
+          <p class="card-desc">Neue Ventures nehmen Form an. Bleiben Sie gespannt.</p>
           <div class="dots"><span></span><span></span><span></span></div>
         </div>
 
@@ -197,63 +197,63 @@
     </section>
 
     <section class="impressum-section" id="impressum">
-      <p class="section-label">Legal Notice (Impressum)</p>
+      <p class="section-label">Impressum</p>
 
       <div class="ig-notice">
-        <strong style="color:var(--text);">Note:</strong> Mason Ventures GmbH is currently in the process of formation (<em>Gesellschaft in Gründung, GmbH i.G.</em>). The company has not yet been entered in the commercial register. In the interim, Tim Maurer acts as the personally liable founder (<em>Gründer</em>) and is personally liable for all obligations incurred during this formation period.
+        <strong style="color:var(--text);">Hinweis:</strong> Die Mason Ventures GmbH befindet sich derzeit in Gründung (<em>GmbH i.G.</em>). Die Gesellschaft ist noch nicht im Handelsregister eingetragen. Bis zur Eintragung haftet Tim Maurer als Gründer persönlich für alle im Rahmen der Gründungsphase eingegangenen Verbindlichkeiten.
       </div>
 
       <div class="impressum-grid">
         <div class="impressum-block">
-          <h3>Company</h3>
+          <h3>Unternehmen</h3>
           <address>
             Mason Ventures GmbH i.G.<br/>
             c/o Tim Maurer<br/>
             Holbeinring 72<br/>
             74613 Öhringen<br/>
-            Germany
+            Deutschland
           </address>
-          <p style="margin-top:8px;font-size:0.76rem;color:#5a5448;">(Private address of the founder; no public walk-in location)</p>
+          <p style="margin-top:8px;font-size:0.76rem;color:#5a5448;">(Privatadresse des Gründers; kein öffentlicher Besucherstandort)</p>
         </div>
 
         <div class="impressum-block">
-          <h3>Responsible Person</h3>
-          <p>Tim Maurer<br/>(Founder &amp; Managing Director)</p>
+          <h3>Verantwortliche Person</h3>
+          <p>Tim Maurer<br/>(Gründer &amp; Geschäftsführer)</p>
         </div>
 
         <div class="impressum-block">
-          <h3>Contact</h3>
+          <h3>Kontakt</h3>
           <p>
-            Email: <a href="mailto:tim@masonventures.de">tim@masonventures.de</a><br/>
-            Phone: <a href="tel:+491741020423">+49 174 1020423</a>
+            E-Mail: <a href="mailto:tim@masonventures.de">tim@masonventures.de</a><br/>
+            Telefon: <a href="tel:+491741020423">+49 174 1020423</a>
           </p>
         </div>
 
         <div class="impressum-block">
-          <h3>Register &amp; VAT</h3>
-          <p>Commercial register entry and VAT identification number will be added here upon completion of the formation process.</p>
+          <h3>Registereintrag &amp; USt-IdNr.</h3>
+          <p>Handelsregistereintrag und Umsatzsteuer-Identifikationsnummer werden nach Abschluss des Gründungsprozesses hier ergänzt.</p>
         </div>
       </div>
 
       <div class="disclaimer-text">
-        <h3>Liability for Content</h3>
-        The contents of this website have been compiled with the greatest possible care. However, we cannot guarantee the accuracy, completeness, or timeliness of the information provided. As a service provider, we are responsible for our own content under applicable law. We are not obligated to monitor transmitted or stored third-party information or to investigate circumstances indicating illegal activity. Obligations to remove or block the use of information under general law remain unaffected.
+        <h3>Haftung für Inhalte</h3>
+        Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
 
-        <h3>Liability for Links</h3>
-        This website contains links to external third-party websites over whose content we have no influence and for which we assume no liability. The respective provider or operator of each linked page is solely responsible for its content. All linked pages were checked for possible legal violations at the time of linking; no unlawful content was identified. Permanent monitoring of linked pages is not reasonable without concrete evidence of an infringement. Upon notification of violations, we will remove the relevant links immediately.
+        <h3>Haftung für Links</h3>
+        Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
 
-        <h3>Copyright</h3>
-        The content and works created by the site operator on these pages are subject to German copyright law. Reproduction, processing, distribution, or any form of commercialization beyond the scope permitted by copyright law requires prior written consent. Downloads and copies of this site are permitted for private, non-commercial use only.
+        <h3>Urheberrecht</h3>
+        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
 
-        <h3>Privacy Notice</h3>
-        This website does not use cookies, tracking technologies, or analytics tools, and does not collect personal data beyond what is technically necessary to serve the page. If you contact us by email, the data you provide will be used solely to process your inquiry and will not be passed on to third parties. For further information or to exercise your rights under the GDPR, please contact us at the address above.
+        <h3>Datenschutz</h3>
+        Diese Website verwendet keine Cookies, Tracking-Technologien oder Analysetools und erhebt keine personenbezogenen Daten über das technisch notwendige Maß zur Auslieferung der Seite hinaus. Sofern Sie uns per E-Mail kontaktieren, werden Ihre Daten ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben. Weitere Informationen sowie die Geltendmachung Ihrer Rechte gemäß DSGVO richten Sie bitte an die oben genannte Adresse.
       </div>
     </section>
 
     <footer>
       <span class="footer-brand">Mason <em>Ventures</em> GmbH i.G.</span>
       <div class="footer-right">
-        <span class="footer-copy">&copy; <script>document.write(new Date().getFullYear())</script> Mason Ventures GmbH i.G. All rights reserved.</span>
+        <span class="footer-copy">&copy; <script>document.write(new Date().getFullYear())</script> Mason Ventures GmbH i.G. Alle Rechte vorbehalten.</span>
         <a href="#impressum" class="footer-imp">Impressum</a>
       </div>
     </footer>
